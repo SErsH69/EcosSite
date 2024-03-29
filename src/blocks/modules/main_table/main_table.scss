@@ -1,0 +1,153 @@
+.main_table {
+    padding-top: vw(72);
+    padding-bottom: vw(72);
+    background: #f2f4f7;
+    overflow: hidden;
+    @media all and (max-width: 1023px) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    &__title {
+        margin-bottom: vw(32);
+        font-weight: 600;
+        font-size: vw(30);
+        line-height: 127%;
+        color: #000;
+        @media all and (max-width: 1023px) {
+            padding-bottom: 20px;
+            font-size: 25px;
+        }
+    }
+    &__scroll {
+        overflow: hidden;
+    }
+    &__table {
+        background: #fff;
+        border-radius: 12px;
+        padding: vw(40) vw(68);
+        display: flex;
+        justify-content: space-between;
+        @media all and (max-width: 1023px) {
+            padding: 20px;
+            overflow: auto;
+        }
+        &--side {
+            flex: 0 0 vw(346);
+            @media all and (max-width: 1023px) {
+                flex: 0 0 346px;
+            }
+            .main_table__table--txt {
+                text-align: left;
+                padding-left: vw(35);
+                position: relative;
+                @media all and (max-width: 1023px) {
+                    padding-left: 35px;
+                }
+                &:not(:last-child) {
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        width: 1000%;
+                        bottom: -1px;
+                        background: #d0d5dd;
+                        height: 1px;
+                        @media all and (max-width: 1023px) {
+                            width: 1030px;
+                        }
+                    }
+                }
+            }
+            .main_table__table--tit {
+                position: relative;
+                &:before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    width: 1000%;
+                    bottom: -1px;
+                    background: #d0d5dd;
+                    height: 1px;
+                    @media all and (max-width: 1023px) {
+                        width: 1030px;
+                    }
+                }
+            }
+        }
+        &--tit { 
+            min-height: vw(98);
+            text-align: center;
+            font-weight: 600;
+            font-size: vw(20);
+            line-height: 190%;
+            letter-spacing: -0.02em;
+            text-align: center;
+            color: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @media all and (max-width: 1023px) {
+                min-height: 90px;
+                font-size: 20px;
+            }
+        }
+        &--height {
+            min-height: vw(89);
+            @media all and (max-width: 1023px) {
+                min-height: 90px;
+            }
+        }
+        &--sale {
+            margin-right: auto;
+            outline: 2px solid #1570ef;
+            background: none;
+            margin-right: 0;
+        }
+        &--txt {
+            font-weight: 600;
+            font-size: vw(16);
+            text-align: center;
+            line-height: 337%;
+            letter-spacing: -0.02em;
+            color: #101828;
+            @media all and (max-width: 1023px) {
+                font-size: 16px;
+            }
+        }
+        &--block {
+            width: vw(294);
+            border-radius: 12px;
+            background: #f2f4f7;
+            margin-right: vw(34);
+            @media all and (max-width: 1023px) {
+                width: 294px;
+                flex: 0 0 294px;
+                margin-right: 34px;
+            }
+            .main_table__table--txt {
+                font-weight: 500;
+                font-size: vw(16);
+                line-height: 337%;
+                letter-spacing: -0.02em;
+                text-align: center;
+                color: #101828;
+                @media all and (max-width: 1023px) {
+                    font-size: 16px;
+                }
+                span {
+                    color: #1570ef;
+                    font-weight: 700;
+                }
+            }
+        }
+        &--letter {
+            line-height: 125% !important;
+            padding-top: vw(10);
+            padding-bottom: vw(10);
+            @media all and (max-width: 1023px) {
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+        }
+    }
+}

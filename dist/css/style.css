@@ -1489,6 +1489,128 @@ textarea {
   color: #ff731e;
 }
 
+.main_table {
+  padding-top: 3.75vw;
+  padding-bottom: 3.75vw;
+  background: #f2f4f7;
+  overflow: hidden;
+}
+
+.main_table__title {
+  margin-bottom: 1.6666666667vw;
+  font-weight: 600;
+  font-size: 1.5625vw;
+  line-height: 127%;
+  color: #000;
+}
+
+.main_table__scroll {
+  overflow: hidden;
+}
+
+.main_table__table {
+  background: #fff;
+  border-radius: 12px;
+  padding: 2.0833333333vw 3.5416666667vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main_table__table--side {
+  flex: 0 0 18.0208333333vw;
+}
+
+.main_table__table--side .main_table__table--txt {
+  text-align: left;
+  padding-left: 1.8229166667vw;
+  position: relative;
+}
+
+.main_table__table--side .main_table__table--txt:not(:last-child):before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 1000%;
+  bottom: -1px;
+  background: #d0d5dd;
+  height: 1px;
+}
+
+.main_table__table--side .main_table__table--tit {
+  position: relative;
+}
+
+.main_table__table--side .main_table__table--tit:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 1000%;
+  bottom: -1px;
+  background: #d0d5dd;
+  height: 1px;
+}
+
+.main_table__table--tit {
+  min-height: 5.1041666667vw;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.0416666667vw;
+  line-height: 190%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main_table__table--height {
+  min-height: 4.6354166667vw;
+}
+
+.main_table__table--sale {
+  margin-right: auto;
+  outline: 2px solid #1570ef;
+  background: none;
+  margin-right: 0;
+}
+
+.main_table__table--txt {
+  font-weight: 600;
+  font-size: 0.8333333333vw;
+  text-align: center;
+  line-height: 337%;
+  letter-spacing: -0.02em;
+  color: #101828;
+}
+
+.main_table__table--block {
+  width: 15.3125vw;
+  border-radius: 12px;
+  background: #f2f4f7;
+  margin-right: 1.7708333333vw;
+}
+
+.main_table__table--block .main_table__table--txt {
+  font-weight: 500;
+  font-size: 0.8333333333vw;
+  line-height: 337%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #101828;
+}
+
+.main_table__table--block .main_table__table--txt span {
+  color: #1570ef;
+  font-weight: 700;
+}
+
+.main_table__table--letter {
+  line-height: 125% !important;
+  padding-top: 0.5208333333vw;
+  padding-bottom: 0.5208333333vw;
+}
+
 .card_info {
   padding-top: 3.75vw;
   padding-bottom: 3.75vw;
@@ -2172,6 +2294,65 @@ textarea {
   .card_prod__price--btn {
     font-size: 18px;
     padding: 15px 28px;
+  }
+
+  .main_table {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .main_table__title {
+    padding-bottom: 20px;
+    font-size: 25px;
+  }
+
+  .main_table__table {
+    padding: 20px;
+    overflow: auto;
+  }
+
+  .main_table__table--side {
+    flex: 0 0 346px;
+  }
+
+  .main_table__table--side .main_table__table--txt {
+    padding-left: 35px;
+  }
+
+  .main_table__table--side .main_table__table--txt:not(:last-child):before {
+    width: 1030px;
+  }
+
+  .main_table__table--side .main_table__table--tit:before {
+    width: 1030px;
+  }
+
+  .main_table__table--tit {
+    min-height: 90px;
+    font-size: 20px;
+  }
+
+  .main_table__table--height {
+    min-height: 90px;
+  }
+
+  .main_table__table--txt {
+    font-size: 16px;
+  }
+
+  .main_table__table--block {
+    width: 294px;
+    flex: 0 0 294px;
+    margin-right: 34px;
+  }
+
+  .main_table__table--block .main_table__table--txt {
+    font-size: 16px;
+  }
+
+  .main_table__table--letter {
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   .card_info {
