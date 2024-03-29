@@ -1,0 +1,57 @@
+.main_form {
+    padding-top: vw(64);
+    padding-bottom: vw(64);
+    background: #d1e9ff;
+    @media all and (max-width: 1023px) {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    &__title {
+        margin-bottom: vw(16);
+        font-weight: 600;
+        font-size: vw(30);
+        line-height: 127%;
+        text-align: center;
+        color: #101828;
+        @media all and (max-width: 1023px) {
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+    }
+    &__text {
+        margin-bottom: vw(32);
+        font-weight: 400;
+        font-size: vw(20);
+        line-height: 150%;
+        text-align: center;
+        color: #475467;
+        @media all and (max-width: 1023px) {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+    }
+    &__btn {
+        text-align: center;
+        a {
+            font-weight: 600;
+            font-size: vw(16);
+            line-height: 150%;
+            color: #fff;
+            border-radius: 8px;
+            text-decoration: none;
+            display: inline-block;
+            padding: vw(12) vw(20);
+            box-shadow: 0 1px 2px 0 rgba(16, 24, 40, 0.05);
+            background: #ff731e;
+            border: 1px solid #ff731e;
+            @media all and (max-width: 1023px) {
+                padding: 12px 20px;
+                font-size: 16px;
+            }
+            &:hover {
+                color: #ff731e;
+                background: #fff;
+            }
+        }
+    }
+}

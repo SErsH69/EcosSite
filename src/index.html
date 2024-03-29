@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper" id="app" :class="{isMobile, isTablet}">
+        <header class="header"></header>
+        <main class="content">
+            @@include('blocks/modules/main_first/main_first.html', {})
+            @@include('blocks/modules/main_pref/main_pref.html', {})
+            @@include('blocks/modules/main_products/main_products.html', {})
+            @@include('blocks/modules/main_rent/main_rent.html', {})
+            @@include('blocks/modules/main_host/main_host.html', {})
+            @@include('blocks/modules/main_form/main_form.html', {})
+            @@include('blocks/modules/main_more/main_more.html', {})
+        </main>
+        <footer class="footer"></footer>
+        @@include('blocks/modules/modals/main.modal.html', {})
+    </div>
+    <script src="js/app.min.js"></script>
+</body>
+</html>

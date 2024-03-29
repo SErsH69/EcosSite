@@ -1,0 +1,111 @@
+.main_more {
+    padding-top: vw(64);
+    padding-bottom: vw(64);
+    background: #fff;
+    @media all and (max-width: 1023px) {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    &__title {
+        margin-bottom: vw(24);
+        font-weight: 600;
+        font-size: vw(30);
+        line-height: 127%;
+        text-align: center;
+        color: #101828;
+        @media all and (max-width: 1023px) {
+            margin-bottom: 20px;
+            font-size: 25px;
+        }
+    }
+    &__text {
+        margin-bottom: vw(64);
+        font-weight: 400;
+        font-size: vw(20);
+        line-height: 150%;
+        text-align: center;
+        color: #475467;
+        @media all and (max-width: 1023px) {
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+    }
+    &__blocks {
+        max-width: vw(704);
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        @media all and (max-width: 1023px) {
+            max-width: 100%;
+        }
+    }
+    &__block {
+        border-radius: 16px;
+        padding: vw(16);
+        border-top: 1px solid #eaecf0;
+        @media all and (max-width: 1023px) {
+            padding: 16px;
+        }
+        &.isActive {
+            background: #f2f4f7;
+            .main_more__answer {
+                display: block;
+            }
+            .main_more__question {
+                &:before {
+                    background: url("data:image/svg+xml,%3Csvg width='10' height='2' viewBox='0 0 10 2' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1H9' stroke='%23344054' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' /%3E%3C/svg%3E") 50% no-repeat;
+                }
+            }
+        }
+    }
+    &__question {
+        font-weight: 500;
+        font-size: vw(18);
+        line-height: 156%;
+        color: #101828;
+        padding-top: vw(8);
+        padding-bottom: vw(8);
+        cursor: pointer;
+        padding-right: vw(30);
+        position: relative;
+        @media all and (max-width: 1023px) {
+            padding-right: 30px;
+            padding-top: 0;
+            padding-bottom: 0;
+            font-size: 16px;
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: 0;
+            width: vw(24);
+            height: vw(24);
+            background: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 8V16M8 12H16' stroke='%23344054' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' /%3E%3C/svg%3E") 50% no-repeat;
+            margin-top: vw(-12);
+            @media all and (max-width: 1023px) {
+                width: 24px;
+                height: 24px;
+                margin-top: -12px;
+            }
+        }
+    }
+    &__answer {
+        font-weight: 400;
+        font-size: vw(16);
+        line-height: 150%;
+        color: #475467;
+        display: none;
+        @media all and (max-width: 1023px) {
+            font-size: 14px;
+        }
+        p {
+            &:first-child {
+                margin-top: 0;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
