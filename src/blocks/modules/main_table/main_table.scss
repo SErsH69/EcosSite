@@ -1,6 +1,6 @@
 .main_table {
-    padding-top: vw(72);
-    padding-bottom: vw(72);
+    padding-top: 72px;
+    padding-bottom: 72px;
     background: #f2f4f7;
     overflow: hidden;
     @media all and (max-width: 1023px) {
@@ -8,9 +8,9 @@
         padding-bottom: 30px;
     }
     &__title {
-        margin-bottom: vw(32);
+        margin-bottom: 32px;
         font-weight: 600;
-        font-size: vw(30);
+        font-size: 30px;
         line-height: 127%;
         color: #000;
         @media all and (max-width: 1023px) {
@@ -24,7 +24,7 @@
     &__table {
         background: #fff;
         border-radius: 12px;
-        padding: vw(40) vw(68);
+        padding: 40px 68px;
         display: flex;
         justify-content: space-between;
         @media all and (max-width: 1023px) {
@@ -32,13 +32,13 @@
             overflow: auto;
         }
         &--side {
-            flex: 0 0 vw(346);
+            flex: 0 0 273px;
             @media all and (max-width: 1023px) {
-                flex: 0 0 346px;
+                flex: 0 0 273px;
             }
             .main_table__table--txt {
                 text-align: left;
-                padding-left: vw(35);
+                padding-left: 35px;
                 position: relative;
                 @media all and (max-width: 1023px) {
                     padding-left: 35px;
@@ -49,7 +49,7 @@
                         position: absolute;
                         left: 0;
                         width: 1000%;
-                        bottom: -1px;
+                        bottom: 0px;
                         background: #d0d5dd;
                         height: 1px;
                         @media all and (max-width: 1023px) {
@@ -65,7 +65,7 @@
                     position: absolute;
                     left: 0;
                     width: 1000%;
-                    bottom: -1px;
+                    bottom: 0px;
                     background: #d0d5dd;
                     height: 1px;
                     @media all and (max-width: 1023px) {
@@ -75,10 +75,10 @@
             }
         }
         &--tit { 
-            min-height: vw(98);
+            min-height: 98px;
             text-align: center;
             font-weight: 600;
-            font-size: vw(20);
+            font-size: 20px;
             line-height: 190%;
             letter-spacing: -0.02em;
             text-align: center;
@@ -86,13 +86,14 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            height: 53px;
             @media all and (max-width: 1023px) {
                 min-height: 90px;
                 font-size: 20px;
             }
         }
         &--height {
-            min-height: vw(89);
+            min-height: 89px;
             @media all and (max-width: 1023px) {
                 min-height: 90px;
             }
@@ -102,23 +103,31 @@
             outline: 2px solid #1570ef;
             background: none;
             margin-right: 0;
+            position: relative;
+            .main_table__table--tit {
+                border-bottom: 1px solid #d0d5dd;
+            }
+            .main_table__table--txt:not(:last-child) {
+                border-bottom: 1px solid #d0d5dd;
+            }
         }
         &--txt {
             font-weight: 600;
-            font-size: vw(16);
+            font-size: 16px;
             text-align: center;
             line-height: 337%;
             letter-spacing: -0.02em;
             color: #101828;
+            height: 53px;
             @media all and (max-width: 1023px) {
                 font-size: 16px;
             }
         }
         &--block {
-            width: vw(294);
+            width: 294px;
             border-radius: 12px;
             background: #f2f4f7;
-            margin-right: vw(34);
+            margin-right: 34px;
             @media all and (max-width: 1023px) {
                 width: 294px;
                 flex: 0 0 294px;
@@ -126,7 +135,7 @@
             }
             .main_table__table--txt {
                 font-weight: 500;
-                font-size: vw(16);
+                font-size: 16px;
                 line-height: 337%;
                 letter-spacing: -0.02em;
                 text-align: center;
@@ -142,8 +151,9 @@
         }
         &--letter {
             line-height: 125% !important;
-            padding-top: vw(10);
-            padding-bottom: vw(10);
+            padding-top: 10px;
+            padding-bottom: 10px;
+            height: 89px;
             @media all and (max-width: 1023px) {
                 padding-top: 10px;
                 padding-bottom: 10px;

@@ -1,15 +1,15 @@
 .main_form {
-    padding-top: vw(64);
-    padding-bottom: vw(64);
+    padding-top: 64px;
+    padding-bottom: 64px;
     background: #d1e9ff;
     @media all and (max-width: 1023px) {
         padding-top: 20px;
         padding-bottom: 20px;
     }
     &__title {
-        margin-bottom: vw(16);
+        margin-bottom: 16px;
         font-weight: 600;
-        font-size: vw(30);
+        font-size: 30px;
         line-height: 127%;
         text-align: center;
         color: #101828;
@@ -19,9 +19,9 @@
         }
     }
     &__text {
-        margin-bottom: vw(32);
+        margin-bottom: 32px;
         font-weight: 400;
-        font-size: vw(20);
+        font-size: 20px;
         line-height: 150%;
         text-align: center;
         color: #475467;
@@ -34,13 +34,13 @@
         text-align: center;
         a {
             font-weight: 600;
-            font-size: vw(16);
+            font-size: 16px;
             line-height: 150%;
             color: #fff;
             border-radius: 8px;
             text-decoration: none;
             display: inline-block;
-            padding: vw(12) vw(20);
+            padding: 12px 20px;
             box-shadow: 0 1px 2px 0 rgba(16, 24, 40, 0.05);
             background: #ff731e;
             border: 1px solid #ff731e;

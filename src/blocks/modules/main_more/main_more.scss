@@ -1,15 +1,15 @@
 .main_more {
-    padding-top: vw(64);
-    padding-bottom: vw(64);
+    padding-top: 64px;
+    padding-bottom: 64px;
     background: #fff;
     @media all and (max-width: 1023px) {
         padding-top: 20px;
         padding-bottom: 20px;
     }
     &__title {
-        margin-bottom: vw(24);
+        margin-bottom: 24px;
         font-weight: 600;
-        font-size: vw(30);
+        font-size: 30px;
         line-height: 127%;
         text-align: center;
         color: #101828;
@@ -19,9 +19,9 @@
         }
     }
     &__text {
-        margin-bottom: vw(64);
+        margin-bottom: 64px;
         font-weight: 400;
-        font-size: vw(20);
+        font-size: 20px;
         line-height: 150%;
         text-align: center;
         color: #475467;
@@ -31,7 +31,7 @@
         }
     }
     &__blocks {
-        max-width: vw(704);
+        max-width: 704px;
         width: 100%;
         margin-left: auto;
         margin-right: auto;
@@ -41,7 +41,7 @@
     }
     &__block {
         border-radius: 16px;
-        padding: vw(16);
+        padding: 16px;
         border-top: 1px solid #eaecf0;
         @media all and (max-width: 1023px) {
             padding: 16px;
@@ -60,13 +60,13 @@
     }
     &__question {
         font-weight: 500;
-        font-size: vw(18);
+        font-size: 18px;
         line-height: 156%;
         color: #101828;
-        padding-top: vw(8);
-        padding-bottom: vw(8);
+        padding-top: 8px;
+        padding-bottom: 8px;
         cursor: pointer;
-        padding-right: vw(30);
+        padding-right: 30px;
         position: relative;
         @media all and (max-width: 1023px) {
             padding-right: 30px;
@@ -79,10 +79,10 @@
             position: absolute;
             top: 50%;
             right: 0;
-            width: vw(24);
-            height: vw(24);
+            width: 24px;
+            height: 24px;
             background: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 8V16M8 12H16' stroke='%23344054' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' /%3E%3C/svg%3E") 50% no-repeat;
-            margin-top: vw(-12);
+            margin-top: -12px;
             @media all and (max-width: 1023px) {
                 width: 24px;
                 height: 24px;
@@ -92,7 +92,7 @@
     }
     &__answer {
         font-weight: 400;
-        font-size: vw(16);
+        font-size: 16px;
         line-height: 150%;
         color: #475467;
         display: none;

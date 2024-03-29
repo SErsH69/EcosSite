@@ -21,8 +21,8 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding-top: vw(38);
-        padding-bottom: vw(16);
+        padding-top: 38px;
+        padding-bottom: 16px;
         @media all and (max-width: 1023px) {
             flex-direction: column;
             padding-top: 20px;
@@ -30,7 +30,7 @@
         }
     }
     &__l-side {
-        max-width: vw(656);
+        max-width: 656px;
         width: 100%;
         @media all and (max-width: 1023px) {
             max-width: 100%;
@@ -38,11 +38,11 @@
     }
     &__title {
         font-weight: 600;
-        font-size: vw(52);
+        font-size: 52px;
         line-height: 127%;
         letter-spacing: -0.02em;
         color: #fff;
-        margin-bottom: vw(25);
+        margin-bottom: 25px;
         @media all and (max-width: 1023px) {
             margin-bottom: 15px;
             font-size: 40px;
@@ -50,11 +50,11 @@
     }
     &__text {
         font-weight: 400;
-        font-size: vw(22);
+        font-size: 22px;
         line-height: 141%;
         letter-spacing: -0.02em;
         color: #fff;
-        max-width: vw(478);
+        max-width: 478px;
         width: 100%;
         @media all and (max-width: 1023px) {
             max-width: 100%;
@@ -63,11 +63,13 @@
         }
     }
     &__r-side {
-        max-width: vw(411);
+        max-width: 314px;
         width: 100%;
         font-size: 0;
+        margin-right: 195px;
         @media all and (max-width: 1023px) {
             max-width: 360px;   
+            margin-right: 0;
         }
         img {
             width: 100%;

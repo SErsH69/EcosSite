@@ -1,15 +1,15 @@
 .main_host {
-    padding-top: vw(64);
-    padding-bottom: vw(64);
+    padding-top: 64px;
+    padding-bottom: 64px;
     background: #fff;
     @media all and (max-width: 1023px) {
         padding-top: 20px;
         padding-bottom: 20px;
     }
     &__title {
-        padding-bottom: vw(40);
+        padding-bottom: 40px;
         font-weight: 600;
-        font-size: vw(16);
+        font-size: 16px;
         line-height: 150%;
         text-align: center;
         color: #1570ef;
@@ -21,7 +21,7 @@
     &__item {
         border: 1px solid #d0d5dd;
         border-radius: 12px;
-        padding: vw(32) vw(64);
+        padding: 32px 64px;
         @media all and (max-width: 1023px) {
             padding: 20px;
         }
@@ -29,18 +29,18 @@
     &__blocks {
         display: flex;
         flex-wrap: wrap;
-        margin-left: vw(-42);
-        margin-right: vw(-42);
+        margin-left: -42px;
+        margin-right: -42px;
         @media all and (max-width: 1023px) {
             margin-left: 0;
             margin-right: 0;
         }
     }
     &__block {
-        margin-left: vw(42);
-        margin-right: vw(42);
-        width: calc(50% - vw(84));
-        margin-bottom: vw(32);
+        margin-left: 42px;
+        margin-right: 42px;
+        width: calc(50% - 84px);
+        margin-bottom: 32px;
         @media all and (max-width: 1023px) {
             margin-bottom: 20px;
             margin-left: 0;
@@ -49,15 +49,15 @@
         }
         &--title {
             text-align: center;
-            padding: vw(14);
+            padding: 14px;
             font-weight: 600;
-            font-size: vw(18);
+            font-size: 18px;
             border-radius: 12px;
             background: #f2f4f7;
             line-height: 150%;
             letter-spacing: -0.02em;
             color: #101828;
-            margin-bottom: vw(32);
+            margin-bottom: 32px;
             @media all and (max-width: 1023px) {
                 margin-bottom: 20px;
                 font-size: 16px;
@@ -66,7 +66,7 @@
         }
         &--text {
             font-weight: 400;
-            font-size: vw(16);
+            font-size: 16px;
             line-height: 150%;
             text-align: center;
             color: #101828;
@@ -76,19 +76,19 @@
         }
     }
     &__info {
-        padding-top: vw(32);
+        padding-top: 32px;
         border-top: 1px solid #d0d5dd;
         @media all and (max-width: 1023px) {
             padding-top: 20px;
         }
         &--title {
             font-weight: 600;
-            font-size: vw(16);
+            font-size: 16px;
             line-height: 100%;
             letter-spacing: -0.02em;
             text-align: center;
             color: #101828;
-            margin-bottom: vw(19);
+            margin-bottom: 19px;
             @media all and (max-width: 1023px) {
                 font-size: 16px;
                 margin-bottom: 15px;
@@ -107,11 +107,11 @@
             li {
                 position: relative;
                 font-weight: 400;
-                font-size: vw(16);
+                font-size: 16px;
                 line-height: 156%;
                 text-align: center;
                 color: #101828;
-                padding-left: vw(35);
+                padding-left: 35px;
                 position: relative;
                 @media all and (max-width: 1023px) {
                     font-size: 16px;
@@ -123,9 +123,9 @@
                     position: absolute;
                     top: 50%;
                     left: 0;
-                    width: vw(24);
-                    height: vw(24);
-                    margin-top: vw(-12);
+                    width: 24px;
+                    height: 24px;
+                    margin-top: -12px;
                     background: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.5 24C6.15909 24 1 18.8409 1 12.5C1 6.15909 6.15909 1 12.5 1C18.8409 1 24 6.15909 24 12.5C24 18.8409 18.8409 24 12.5 24ZM12.5 2.57205C7.02557 2.57205 2.57205 7.02557 2.57205 12.5C2.57205 17.9744 7.02557 22.4279 12.5 22.4279C17.9744 22.4279 22.4279 17.9744 22.4279 12.5C22.4279 7.02557 17.9744 2.57205 12.5 2.57205Z' fill='%23101828' /%3E%3Cpath d='M7 11.1333L11.6957 17L19 9' stroke='%23101828' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round' /%3E%3C/svg%3E") 50% / 100% no-repeat;
                     @media all and (max-width: 1023px) {
                         width: 24px;

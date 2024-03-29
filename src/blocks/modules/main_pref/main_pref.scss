@@ -1,6 +1,6 @@
 .main_pref {
-    padding-top: vw(40);
-    padding-bottom: vw(44);
+    padding-top: 40px;
+    padding-bottom: 44px;
     background: #f2f4f7;
     @media all and (max-width: 1023px) {
         padding-top: 20px;
@@ -12,7 +12,8 @@
     }
     &__block {
         width: 20%;
-        padding-bottom: vw(26);
+        padding-bottom: 26px;
+        padding-top: 20px;
         @media all and (max-width: 1023px) {
             width: 50%;
             padding-bottom: 20px;
@@ -25,7 +26,7 @@
             padding-right: 0;
         }
         &:not(:nth-child(5n+1)) {
-            padding-left: vw(25);
+            padding-left: 25px;
             @media all and (max-width: 1023px) {
                 padding-left: 20px;
             }
@@ -35,7 +36,7 @@
         }
         &:not(:nth-child(5n+5)) {
             border-right: 1px solid #d0d5dd;
-            padding-right: vw(25);
+            padding-right: 25px;
             @media all and (max-width: 1023px) {
                 padding-right: 20px;
                 border: 0;
@@ -57,9 +58,9 @@
         margin-left: auto;
         margin-right: auto;
         font-size: 0;
-        width: vw(48);
-        height: vw(48);
-        margin-bottom: vw(16);
+        width: 48px;
+        height: 48px;
+        margin-bottom: 16px;
         @media all and (max-width: 1023px) {
             margin-bottom: 15px;
             width: 48px;
@@ -68,7 +69,7 @@
     }
     &__title {
         font-weight: 400;
-        font-size: vw(16);
+        font-size: 16px;
         color: #1d2939;
         @media all and (max-width: 1023px) {
             font-size: 16px;
