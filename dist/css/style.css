@@ -643,7 +643,7 @@ textarea {
   background: #ff731e;
   padding: 3px 8px;
   border-radius: 6px;
-  left: 20px;
+  left: 24px;
   top: -14px;
   display: inline-block;
   width: -moz-max-content;
@@ -1985,7 +1985,7 @@ textarea {
 
   .main_products__block--flag {
     top: -14px;
-    left: 23px;
+    left: 20px;
     padding: 3px 8px;
     font-size: 14px;
   }
