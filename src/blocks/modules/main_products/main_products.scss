@@ -81,7 +81,8 @@
         @media all and (max-width: 1023px) {
             margin-left: 0;
             flex-wrap: nowrap;
-            margin-right: 0;
+            margin-right: 0;    
+            align-items: self-start;
             padding-top: 17px;
         }
     }
@@ -131,7 +132,7 @@
         &--top {
             padding: 32px 24px;
             padding-bottom: 15px;
-            background: #f9fafb;
+            background: #fff;
             border-radius: 12px 12px 0 0;
             @media all and (max-width: 1023px) {
                 padding: 20px 20px;
@@ -228,6 +229,7 @@
             padding: 50px 24px;
             padding-top: 15px;
             border-radius: 0 0 12px 12px;
+            background: #f9fafb;
             @media all and (max-width: 1023px) {
                 padding: 20px 20px;
             }
