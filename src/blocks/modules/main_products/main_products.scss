@@ -2,8 +2,20 @@
     padding-top: 64px;
     padding-bottom: 64px;
     @media all and (max-width: 1023px) {
-        padding-top: 20px;
+        padding-top: 0;
         padding-bottom: 20px;
+    }
+    &__tops {
+        @media all and (max-width: 1023px) {
+            background: #fff;
+            padding-top: 20px;
+            padding-bottom: 0px;
+            margin-left: -16px;
+            margin-right: -16px;
+            padding-left: 16px;
+            padding-right: 16px;
+            padding-bottom: 28px;
+        }
     }
     &__title {
         text-align: center;
@@ -14,8 +26,10 @@
         text-align: center;
         color: #101828;
         @media all and (max-width: 1023px) {
-            font-size: 24px;
-            margin-bottom: 15px;
+            font-size: 20px;
+            margin-bottom: 4px;
+            font-weight: 500;
+            line-height: 150%;
         }
     }
     &__subtitle {
@@ -26,7 +40,16 @@
         text-align: center;
         color: #475467;
         @media all and (max-width: 1023px) {
-            font-size: 18px;
+            font-size: 16px;
+        }
+    }
+    &__items {
+        @media all and (max-width: 1023px) {
+            background: #f2f4f7;
+            margin-left: -16px;
+            margin-right: -16px;
+            padding-left: 16px;
+            padding-right: 16px;
         }
     }
     &__tit {
@@ -39,10 +62,15 @@
         color: #101828;
         border-bottom: 1px solid #d0d5dd;
         @media all and (max-width: 1023px) {
-            padding-top: 20px;
-            padding-bottom: 20px;
-            margin-bottom: 20px;
+            padding-top: 14px;
+            padding-bottom: 8px;
+            margin-bottom: 8px;
             font-size: 20px;
+        }
+    }
+    &__scroll {
+        @media all and (max-width: 1023px) {
+            overflow: auto;
         }
     }
     &__blocks {
@@ -52,7 +80,9 @@
         margin-right: -47px;
         @media all and (max-width: 1023px) {
             margin-left: 0;
+            flex-wrap: nowrap;
             margin-right: 0;
+            padding-top: 17px;
         }
     }
     &__block {
@@ -62,15 +92,16 @@
         margin-left: 47px;
         margin-right: 47px;
         width: calc(33.3% - 94px);
-        border-radius: 32px;
+        border-radius: 12px;
         position: relative;
         border: 1px solid #eaecf0;
         margin-bottom: 8px;
         @media all and (max-width: 1023px) {
-            width: 100%;
+            width: 285px;
+            min-width: 285px;
             margin-left: 0;
-            margin-right: 0;
-            border-radius: 20px;
+            margin-right: 9px;
+            border-radius: 12px;
             margin-bottom: 0px;
             &:not(:last-child) {
                 margin-bottom: 20px;
@@ -232,8 +263,8 @@
         text-align: center;
         margin-bottom: 52px;
         @media all and (max-width: 1023px) {
-            margin-top: 12px;
-            margin-bottom: 20px;
+            margin-top: 16px;
+            margin-bottom: 24px;
         }
         &--title {
             font-weight: 500;
@@ -254,7 +285,8 @@
             text-align: center;
             color: #475467;
             @media all and (max-width: 1023px) {
-                font-size: 14px;
+                font-size: 12px;
+                text-align: left;
             }
             p {
                 &:first-child {
@@ -272,9 +304,16 @@
         display: flex;
         align-items: center;
         @media all and (max-width: 1023px) {
-            padding-top: 20px;
+            padding-top: 16px;
+            padding-bottom: 14px;
+            background: #fff;
             flex-direction: column;
             align-items: flex-start;
+            margin-left: -16px;
+            margin-right: -16px;
+            padding-left: 16px;
+            padding-right: 16px;
+            border: 0;
         }
         &--title {
             font-weight: 600;
@@ -286,8 +325,10 @@
             @media all and (max-width: 1023px) {
                 font-size: 20px;
                 flex: none;
+                text-align: center;
                 margin-right: 0;
-                margin-bottom: 15px;
+                width: 100%;
+                margin-bottom: 16px;
             }
         }
         &--blocks {
@@ -300,6 +341,10 @@
                 margin-left: -5px;
                 margin-right: -5px;
                 width: 100%;
+            }
+            @media all and (max-width: 380px) {
+                margin-left: 0;
+                margin-right: 0;
             }
         }
         &--block {
@@ -328,6 +373,8 @@
             }
             @media all and (max-width: 380px) {
                 width: calc(100% - 10px);
+                margin-left: 0;
+                margin-right: 0;
             }
             svg {
                 flex: 0 0 21px;

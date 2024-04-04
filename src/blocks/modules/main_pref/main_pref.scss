@@ -3,27 +3,38 @@
     padding-bottom: 44px;
     background: #f2f4f7;
     @media all and (max-width: 1023px) {
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        background: #fff;
     }
     &__in {
+        @media all and (max-width: 1023px) {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+    &__items { 
+        @media all and (max-width: 1023px) {
+            overflow: auto;
+        }
+    }
+    &__blocks {
         display: flex;
-        flex-wrap: wrap;
+        @media all and (max-width: 1023px) {
+            width: max-content;
+        }
     }
     &__block {
         width: 20%;
         padding-bottom: 26px;
         padding-top: 20px;
         @media all and (max-width: 1023px) {
-            width: 50%;
+            width: 223px;
             padding-bottom: 20px;
-            padding-left: 20px;
-            padding-right: 20px;
-        }
-        @media all and (max-width: 640px) {
-            width: 100%;
-            padding-left: 0;
-            padding-right: 0;
+            padding-left: 16px !important;
+            padding-right: 16px !important;
+            border-right: 1px solid #d0d5dd !important;
+            border-bottom: 1px solid #d0d5dd;
         }
         &:not(:nth-child(5n+1)) {
             padding-left: 25px;
@@ -62,9 +73,9 @@
         height: 48px;
         margin-bottom: 16px;
         @media all and (max-width: 1023px) {
-            margin-bottom: 15px;
-            width: 48px;
-            height: 48px;
+            margin-bottom: 8px;
+            width: 44px;
+            height: 44px;
         }
     }
     &__title {
@@ -72,7 +83,7 @@
         font-size: 16px;
         color: #1d2939;
         @media all and (max-width: 1023px) {
-            font-size: 16px;
+            font-size: 14px;
         }
     }
 }

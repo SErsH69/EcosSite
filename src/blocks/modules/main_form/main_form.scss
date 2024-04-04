@@ -3,8 +3,8 @@
     padding-bottom: 64px;
     background: #d1e9ff;
     @media all and (max-width: 1023px) {
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding-top: 32px;
+        padding-bottom: 34px;
     }
     &__title {
         margin-bottom: 16px;
@@ -14,8 +14,10 @@
         text-align: center;
         color: #101828;
         @media all and (max-width: 1023px) {
-            margin-bottom: 15px;
+            margin-bottom: 4px;
             font-size: 20px;
+            line-height: 150%;
+            font-weight: 500;
         }
     }
     &__text {
@@ -27,7 +29,10 @@
         color: #475467;
         @media all and (max-width: 1023px) {
             font-size: 16px;
-            margin-bottom: 20px;
+            margin-bottom: 16px;
+            line-height: 112%;
+            padding-left: 18px;
+            padding-right: 18px;
         }
     }
     &__btn {
@@ -47,6 +52,8 @@
             @media all and (max-width: 1023px) {
                 padding: 12px 20px;
                 font-size: 16px;
+                text-transform: unset;
+                display: block;
             }
             &:hover {
                 color: #ff731e;

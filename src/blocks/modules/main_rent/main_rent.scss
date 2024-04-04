@@ -4,8 +4,8 @@
     padding-bottom: 64px;
     border-radius: 12px;
     @media all and (max-width: 1023px) {
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding-top: 24px;
+        padding-bottom: 24px;
     }
     &__title {
         font-weight: 600;
@@ -15,13 +15,24 @@
         color: #101828;
         margin-bottom: 32px;
         @media all and (max-width: 1023px) {
-            margin-bottom: 20px;
-            font-size: 22px;
+            margin-bottom: 16px;
+            font-size: 20px;
+        }
+    }
+    &__items {
+        @media all and (max-width: 1023px) {
+            overflow: auto;
+            border-bottom: 1px solid #d0d5dd;
+            border-top: 1px solid #d0d5dd;
+            padding-top: 8px;
+            padding-bottom: 8px;
         }
     }
     &__blocks {
         display: flex;
-        flex-wrap: wrap;
+        @media all and (max-width: 1023px) {
+            width: max-content;
+        }
     }
     &__block {
         width: 25%;
@@ -29,9 +40,17 @@
         padding: 16px 28px;
         position: relative;
         @media all and (max-width: 1023px) {
-            width: 100%;
-            border: 0;
-            padding: 16px 0px;
+            width: 168px;
+            padding: 0px 16px;
+            &:not(:first-child) {
+                width: 245px;
+            }
+            &:first-child {
+                padding-left: 0;
+            }
+            &:last-child {
+                padding-right: 0;
+            }
         }
         &:not(:last-child) {
             &:before {
@@ -41,9 +60,10 @@
                 width: 50px;
                 height: 16px;
                 @media all and (max-width: 1023px) {
-                    top: 35px;
+                    top: 20px;
                     right: 20px;
-                    width: 50px;
+                    width: 32px;
+                    background: url("data:image/svg+xml,%3Csvg width='33' height='15' viewBox='0 0 33 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M32.7071 8.20711C33.0976 7.81658 33.0976 7.18342 32.7071 6.79289L26.3431 0.428932C25.9526 0.0384078 25.3195 0.0384078 24.9289 0.428932C24.5384 0.819457 24.5384 1.45262 24.9289 1.84315L30.5858 7.5L24.9289 13.1569C24.5384 13.5474 24.5384 14.1805 24.9289 14.5711C25.3195 14.9616 25.9526 14.9616 26.3431 14.5711L32.7071 8.20711ZM0 8.5H32V6.5H0V8.5Z' fill='%231570EF' /%3E%3C/svg%3E") 50% no-repeat;
                     height: 16px;
                 }
             }
@@ -63,14 +83,14 @@
                     width: 32px;
                     height: 32px;
                     right: 20px;
-                    top: 25px;
+                    top: 10px;
                 }
             }
         }
         &:first-child {
             border-left: 1px solid #d0d5dd;
             @media all and (max-width: 1023px) {
-                border: 0;
+                border-left: 0;
             }
         }
     }
@@ -85,9 +105,9 @@
         display: inline-block;
         margin-bottom: 16px;
         @media all and (max-width: 1023px) {
-            font-size: 16px;
-            padding: 10px 40px;
-            margin-bottom: 15px;
+            font-size: 18px;
+            padding: 4px 20px;
+            margin-bottom: 8px;
         }
     }
     &__text {
@@ -96,7 +116,8 @@
         line-height: 150%;
         color: #1d2939;
         @media all and (max-width: 1023px) {
-            font-size: 16px;
+            font-size: 14px;
+            color: #475467;
         }
         a {
             font-weight: 600;
