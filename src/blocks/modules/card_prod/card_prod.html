@@ -3,6 +3,8 @@
         <a href="/" class="card_prod__back">Back</a>
         <div class="card_prod__prod">
             <div class="card_prod__l-side">
+                <div class="card_prod__title" v-if="sizes.window <= 1023">Rent ASIC Order: <span>S19K Pro 115TH</span>
+                </div>
                 <div class="card_prod__top">
                     <span>115 Th/s </span>
                     <span>3000 mWt</span>
@@ -10,16 +12,16 @@
                 <div class="card_prod__img">
                     <img src="./img/prod_img.png" alt="">
                 </div>
-                <div class="card_prod__text">Text, text of hash power from mining devices (ASICs) without the need to purchase and install them. You will just pay service fees and receive payouts in BTC to your ECOS account. From mining devices</div>
+                <div class="card_prod__text" v-if="sizes.window >= 1023">Text, text of hash power from mining devices (ASICs) without the need to purchase and install them. You will just pay service fees and receive payouts in BTC to your ECOS account. From mining devices</div>
             </div>
             <div class="card_prod__r-side">
-                <div class="card_prod__title">Rent ASIC Order:
+                <div class="card_prod__title" v-if="sizes.window >= 1023">Rent ASIC Order:
                     S19K Pro 115TH<span>| Duration: 36 months</span>
                 </div>
-                <div class="card_prod__txt">Text, text. Mining is renting of hash power from mining devices (ASICs) without the need to purchase and install them. You will just pay service fees and receive payouts in BTC to your ECOS account. From mining devices (ASICs) without the need to purchase and install them. You will just pay service fees and receive payouts</div>
+                <div class="card_prod__txt" v-if="sizes.window >= 1023">Text, text. Mining is renting of hash power from mining devices (ASICs) without the need to purchase and install them. You will just pay service fees and receive payouts in BTC to your ECOS account. From mining devices (ASICs) without the need to purchase and install them. You will just pay service fees and receive payouts</div>
                 <div class="card_prod__info">
                     <div class="card_prod__info--l-side">
-                        <div class="card_prod__info--title">ASIC S21 188TH </div>
+                        <div class="card_prod__info--title">Rentail Details:</div>
                         <ul class="card_prod__info--list">
                             <li><span>Hosting Fee/Month:</span> $225</li>
                             <li><span>Rent/Day:</span> $2.73</li>
@@ -51,10 +53,15 @@
                             </div>
                         </div>
                         <div class="card_prod__quality">
-                            <span>Quantity:</span>
+                            <div class="card_prod__quality--l-side">
+                                <span>Quantity:</span>
+                            </div>
+                            <div class="card_prod__price--l-side" v-if="sizes.window <= 1023">
+                                Total Price: <span>$ 6 000</span>
+                            </div>
                         </div>
                         <div class="card_prod__price">
-                            <div class="card_prod__price--l-side">
+                            <div class="card_prod__price--l-side" v-if="sizes.window >= 1023">
                                 Total Price: <span>$ 6 000</span>
                             </div>
                             <a href="#" class="card_prod__price--btn">Buy</a>

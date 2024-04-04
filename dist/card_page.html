@@ -7,8 +7,8 @@
     <title>Карточка товара</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap&_v=20240404100211" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css?_v=20240404100211">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap&_v=20240404122022" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css?_v=20240404122022">
 </head>
 <body>
     <div class="wrapper" id="app" :class="{isMobile, isTablet}">
@@ -19,6 +19,8 @@
         <a href="/" class="card_prod__back">Back</a>
         <div class="card_prod__prod">
             <div class="card_prod__l-side">
+                <div class="card_prod__title" v-if="sizes.window <= 1023">Rent ASIC Order: <span>S19K Pro 115TH</span>
+                </div>
                 <div class="card_prod__top">
                     <span>115 Th/s </span>
                     <span>3000 mWt</span>
@@ -26,16 +28,16 @@
                 <div class="card_prod__img">
                     <picture><source srcset="./img/prod_img.webp" type="image/webp"><img src="./img/prod_img.png" alt=""></picture>
                 </div>
-                <div class="card_prod__text">Text, text of hash power from mining devices (ASICs) without the need to purchase and install them. You will just pay service fees and receive payouts in BTC to your ECOS account. From mining devices</div>
+                <div class="card_prod__text" v-if="sizes.window >= 1023">Text, text of hash power from mining devices (ASICs) without the need to purchase and install them. You will just pay service fees and receive payouts in BTC to your ECOS account. From mining devices</div>
             </div>
             <div class="card_prod__r-side">
-                <div class="card_prod__title">Rent ASIC Order:
+                <div class="card_prod__title" v-if="sizes.window >= 1023">Rent ASIC Order:
                     S19K Pro 115TH<span>| Duration: 36 months</span>
                 </div>
-                <div class="card_prod__txt">Text, text. Mining is renting of hash power from mining devices (ASICs) without the need to purchase and install them. You will just pay service fees and receive payouts in BTC to your ECOS account. From mining devices (ASICs) without the need to purchase and install them. You will just pay service fees and receive payouts</div>
+                <div class="card_prod__txt" v-if="sizes.window >= 1023">Text, text. Mining is renting of hash power from mining devices (ASICs) without the need to purchase and install them. You will just pay service fees and receive payouts in BTC to your ECOS account. From mining devices (ASICs) without the need to purchase and install them. You will just pay service fees and receive payouts</div>
                 <div class="card_prod__info">
                     <div class="card_prod__info--l-side">
-                        <div class="card_prod__info--title">ASIC S21 188TH </div>
+                        <div class="card_prod__info--title">Rentail Details:</div>
                         <ul class="card_prod__info--list">
                             <li><span>Hosting Fee/Month:</span> $225</li>
                             <li><span>Rent/Day:</span> $2.73</li>
@@ -67,10 +69,15 @@
                             </div>
                         </div>
                         <div class="card_prod__quality">
-                            <span>Quantity:</span>
+                            <div class="card_prod__quality--l-side">
+                                <span>Quantity:</span>
+                            </div>
+                            <div class="card_prod__price--l-side" v-if="sizes.window <= 1023">
+                                Total Price: <span>$ 6 000</span>
+                            </div>
                         </div>
                         <div class="card_prod__price">
-                            <div class="card_prod__price--l-side">
+                            <div class="card_prod__price--l-side" v-if="sizes.window >= 1023">
                                 Total Price: <span>$ 6 000</span>
                             </div>
                             <a href="#" class="card_prod__price--btn">Buy</a>
@@ -85,7 +92,7 @@
             <div class="main_table">
     <div class="main_table__in container">
         <div class="main_table__title">Comparing to ASIC purchase</div>
-        <div class="main_table__scroll">
+        <div class="main_table__scroll" v-if="sizes.window >= 1023">
             <div class="main_table__table">
                 <div class="main_table__table--side">
                     <div class="main_table__table--tit"></div>
@@ -122,6 +129,75 @@
                     <div class="main_table__table--txt">0</div>
                     <div class="main_table__table--txt main_table__table--letter">In the event of a miner repairment or maintenance, the hashrate will be provided by other functioning miners</div>
                     <div class="main_table__table--txt">Immediately</div>
+                </div>
+            </div>
+        </div>
+        <div class="main_table__mob" v-if="sizes.window <= 1023"></div>
+            <div class="main_table__mob--top">
+                <div class="main_table__mob--title">Rental</div>
+                <div class="main_table__mob--title">Purchase</div>
+            </div>
+            <div class="main_table__mob--block">
+                <div class="main_table__mob--tit">Price:</div>
+                <div class="main_table__mob--blocks">
+                    <div class="main_table__mob--item main_table__mob--prc">$ 1 800</div>
+                    <div class="main_table__mob--item main_table__mob--prc1">$ 3 250</div>
+                </div>
+            </div>
+            <div class="main_table__mob--block">
+                <div class="main_table__mob--tit">Rental Period, Months:</div>
+                <div class="main_table__mob--blocks">
+                    <div class="main_table__mob--item">12</div>
+                    <div class="main_table__mob--item">60</div>
+                </div>
+            </div>
+            <div class="main_table__mob--block">
+                <div class="main_table__mob--tit">TH/s:</div>
+                <div class="main_table__mob--blocks">
+                    <div class="main_table__mob--item">115</div>
+                    <div class="main_table__mob--item">115</div>
+                </div>
+            </div>
+            <div class="main_table__mob--block">
+                <div class="main_table__mob--tit">Ownership:</div>
+                <div class="main_table__mob--blocks">
+                    <div class="main_table__mob--item">no</div>
+                    <div class="main_table__mob--item">yes</div>
+                </div>
+            </div>
+            <div class="main_table__mob--block">
+                <div class="main_table__mob--tit">Commission payment schedule:</div>
+                <div class="main_table__mob--blocks">
+                    <div class="main_table__mob--item">daily or monthly</div>
+                    <div class="main_table__mob--item">monthly prepayment</div>
+                </div>
+            </div>
+            <div class="main_table__mob--block">
+                <div class="main_table__mob--tit">Price/TH per Day:</div>
+                <div class="main_table__mob--blocks">
+                    <div class="main_table__mob--item">0,043</div>
+                    <div class="main_table__mob--item">0,015</div>
+                </div>
+            </div>
+            <div class="main_table__mob--block">
+                <div class="main_table__mob--tit">Installment costs:</div>
+                <div class="main_table__mob--blocks">
+                    <div class="main_table__mob--item">0</div>
+                    <div class="main_table__mob--item">650</div>
+                </div>
+            </div>
+            <div class="main_table__mob--block">
+                <div class="main_table__mob--tit">Repair Costs:</div>
+                <div class="main_table__mob--blocks">
+                    <div class="main_table__mob--item">In the event of a miner repairment or maintenance, the hashrate will be provided by other functioning miners</div>
+                    <div class="main_table__mob--item">In case of malfunction: 6 month guaranteerepair costs on behalf of the customer in case of break</div>
+                </div>
+            </div>
+            <div class="main_table__mob--block">
+                <div class="main_table__mob--tit">Date of mining start:</div>
+                <div class="main_table__mob--blocks">
+                    <div class="main_table__mob--item">Immediately</div>
+                    <div class="main_table__mob--item">14-21 days</div>
                 </div>
             </div>
         </div>
@@ -180,6 +256,6 @@
     </div>
 </div>
     </div>
-    <script src="js/app.min.js?_v=20240404100211"></script>
+    <script src="js/app.min.js?_v=20240404122022"></script>
 </body>
 </html>

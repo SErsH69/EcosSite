@@ -3,8 +3,8 @@
     padding-bottom: 72px;
     background: #fff;
     @media all and (max-width: 1023px) {
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding-top: 0px;
+        padding-bottom: 0px;
     }
     &__red {
         text-align: center;
@@ -12,8 +12,14 @@
         background: #f9fafb;
         padding: 20px 40px;
         @media all and (max-width: 1023px) {
-            margin-bottom: 20px;
-            padding: 20px;
+            margin-bottom: 24px;
+            padding: 26px;
+            padding-left: 16px;
+            padding-right: 16px;
+            margin-left: -16px;
+            margin-right: -16px;
+            margin-bottom: 0;
+            background: #f2f4f7;
         }
         &--title {
             font-weight: 500;
@@ -34,7 +40,8 @@
             text-align: center;
             color: #475467;
             @media all and (max-width: 1023px) {
-                font-size: 14px;
+                font-size: 12px;
+                text-align: left;
             }
             p {
                 &:first-child {
@@ -47,16 +54,25 @@
         }
     }
     &__socs {
+        padding-top: 64px;
+        border-top: 1px solid #d0d5dd;
         display: flex;
         align-items: center;
         @media all and (max-width: 1023px) {
-            padding-top: 20px;
+            padding-top: 16px;
+            padding-bottom: 14px;
+            background: #fff;
             flex-direction: column;
             align-items: flex-start;
+            margin-left: -16px;
+            margin-right: -16px;
+            padding-left: 16px;
+            padding-right: 16px;
+            border: 0;
         }
         &--title {
             font-weight: 600;
-            font-size: 30px;
+            font-size: 24px;
             line-height: 158%;
             color: #101828;
             flex: 0 0 380px;
@@ -64,8 +80,11 @@
             @media all and (max-width: 1023px) {
                 font-size: 20px;
                 flex: none;
+                text-align: center;
                 margin-right: 0;
-                margin-bottom: 15px;
+                font-weight: 500;
+                width: 100%;
+                margin-bottom: 16px;
             }
         }
         &--blocks {
@@ -78,6 +97,10 @@
                 margin-left: -5px;
                 margin-right: -5px;
                 width: 100%;
+            }
+            @media all and (max-width: 380px) {
+                margin-left: 0;
+                margin-right: 0;
             }
         }
         &--block {
@@ -106,6 +129,8 @@
             }
             @media all and (max-width: 380px) {
                 width: calc(100% - 10px);
+                margin-left: 0;
+                margin-right: 0;
             }
             svg {
                 flex: 0 0 21px;

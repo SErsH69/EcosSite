@@ -1,7 +1,7 @@
 <div class="main_table">
     <div class="main_table__in container">
         <div class="main_table__title">Comparing to ASIC purchase</div>
-        <div class="main_table__scroll">
+        <div class="main_table__scroll" v-if="sizes.window >= 1023">
             <div class="main_table__table">
                 <div class="main_table__table--side">
                     <div class="main_table__table--tit"></div>
@@ -38,6 +38,75 @@
                     <div class="main_table__table--txt">0</div>
                     <div class="main_table__table--txt main_table__table--letter">In the event of a miner repairment or maintenance, the hashrate will be provided by other functioning miners</div>
                     <div class="main_table__table--txt">Immediately</div>
+                </div>
+            </div>
+        </div>
+        <div class="main_table__mob" v-if="sizes.window <= 1023"></div>
+            <div class="main_table__mob--top">
+                <div class="main_table__mob--title">Rental</div>
+                <div class="main_table__mob--title">Purchase</div>
+            </div>
+            <div class="main_table__mob--block">
+                <div class="main_table__mob--tit">Price:</div>
+                <div class="main_table__mob--blocks">
+                    <div class="main_table__mob--item main_table__mob--prc">$ 1 800</div>
+                    <div class="main_table__mob--item main_table__mob--prc1">$ 3 250</div>
+                </div>
+            </div>
+            <div class="main_table__mob--block">
+                <div class="main_table__mob--tit">Rental Period, Months:</div>
+                <div class="main_table__mob--blocks">
+                    <div class="main_table__mob--item">12</div>
+                    <div class="main_table__mob--item">60</div>
+                </div>
+            </div>
+            <div class="main_table__mob--block">
+                <div class="main_table__mob--tit">TH/s:</div>
+                <div class="main_table__mob--blocks">
+                    <div class="main_table__mob--item">115</div>
+                    <div class="main_table__mob--item">115</div>
+                </div>
+            </div>
+            <div class="main_table__mob--block">
+                <div class="main_table__mob--tit">Ownership:</div>
+                <div class="main_table__mob--blocks">
+                    <div class="main_table__mob--item">no</div>
+                    <div class="main_table__mob--item">yes</div>
+                </div>
+            </div>
+            <div class="main_table__mob--block">
+                <div class="main_table__mob--tit">Commission payment schedule:</div>
+                <div class="main_table__mob--blocks">
+                    <div class="main_table__mob--item">daily or monthly</div>
+                    <div class="main_table__mob--item">monthly prepayment</div>
+                </div>
+            </div>
+            <div class="main_table__mob--block">
+                <div class="main_table__mob--tit">Price/TH per Day:</div>
+                <div class="main_table__mob--blocks">
+                    <div class="main_table__mob--item">0,043</div>
+                    <div class="main_table__mob--item">0,015</div>
+                </div>
+            </div>
+            <div class="main_table__mob--block">
+                <div class="main_table__mob--tit">Installment costs:</div>
+                <div class="main_table__mob--blocks">
+                    <div class="main_table__mob--item">0</div>
+                    <div class="main_table__mob--item">650</div>
+                </div>
+            </div>
+            <div class="main_table__mob--block">
+                <div class="main_table__mob--tit">Repair Costs:</div>
+                <div class="main_table__mob--blocks">
+                    <div class="main_table__mob--item">In the event of a miner repairment or maintenance, the hashrate will be provided by other functioning miners</div>
+                    <div class="main_table__mob--item">In case of malfunction: 6 month guaranteerepair costs on behalf of the customer in case of break</div>
+                </div>
+            </div>
+            <div class="main_table__mob--block">
+                <div class="main_table__mob--tit">Date of mining start:</div>
+                <div class="main_table__mob--blocks">
+                    <div class="main_table__mob--item">Immediately</div>
+                    <div class="main_table__mob--item">14-21 days</div>
                 </div>
             </div>
         </div>
