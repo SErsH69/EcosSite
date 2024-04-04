@@ -34,7 +34,7 @@
             padding-left: 16px !important;
             padding-right: 16px !important;
             border-right: 1px solid #d0d5dd !important;
-            border-bottom: 1px solid #d0d5dd;
+            border-bottom: 1px solid #d0d5dd !important;
         }
         &:not(:nth-child(5n+1)) {
             padding-left: 25px;

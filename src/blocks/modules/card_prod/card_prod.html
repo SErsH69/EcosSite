@@ -3,6 +3,7 @@
         <a href="/" class="card_prod__back">Back</a>
         <div class="card_prod__prod">
             <div class="card_prod__l-side">
+                <div class="card_prod__flag" v-if="sizes.window <= 1023">36 months </div>
                 <div class="card_prod__title" v-if="sizes.window <= 1023">Rent ASIC Order: <span>S19K Pro 115TH</span>
                 </div>
                 <div class="card_prod__top">
@@ -16,7 +17,7 @@
             </div>
             <div class="card_prod__r-side">
                 <div class="card_prod__title" v-if="sizes.window >= 1023">Rent ASIC Order:
-                    S19K Pro 115TH<span>| Duration: 36 months</span>
+                    S19K Pro 115TH<span> Duration: 36 months</span>
                 </div>
                 <div class="card_prod__txt" v-if="sizes.window >= 1023">Text, text. Mining is renting of hash power from mining devices (ASICs) without the need to purchase and install them. You will just pay service fees and receive payouts in BTC to your ECOS account. From mining devices (ASICs) without the need to purchase and install them. You will just pay service fees and receive payouts</div>
                 <div class="card_prod__info">

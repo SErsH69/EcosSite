@@ -1207,6 +1207,20 @@ textarea {
   padding: 45px 32px;
 }
 
+.card_prod__flag {
+  position: absolute;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #fff;
+  border-radius: 6px;
+  padding: 2px 8px;
+  background: #84caff;
+  right: 17px;
+  top: -14px;
+}
+
 .card_prod__top {
   display: flex;
   align-items: center;
@@ -1261,6 +1275,21 @@ textarea {
 
 .card_prod__title span {
   color: #98a2b3;
+  position: relative;
+  display: inline-block;
+  padding-left: 8px;
+  margin-left: 8px;
+}
+
+.card_prod__title span:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background: #98a2b3;
 }
 
 .card_prod__txt {
@@ -1399,7 +1428,7 @@ textarea {
   font-weight: 400;
   font-size: 16px;
   cursor: pointer;
-  line-height: 150%;
+  line-height: normal;
   color: #101828;
 }
 
@@ -1890,7 +1919,7 @@ textarea {
     padding-left: 16px !important;
     padding-right: 16px !important;
     border-right: 1px solid #d0d5dd !important;
-    border-bottom: 1px solid #d0d5dd;
+    border-bottom: 1px solid #d0d5dd !important;
   }
 
   .main_pref__block:not(:nth-child(5n+1)) {
@@ -1923,7 +1952,7 @@ textarea {
 
   .main_products__tops {
     background: #fff;
-    padding-top: 20px;
+    padding-top: 24px;
     padding-bottom: 0px;
     margin-left: -16px;
     margin-right: -16px;
@@ -1992,7 +2021,6 @@ textarea {
   .main_products__block--top {
     padding: 20px 20px;
     padding-bottom: 15px;
-    border-radius: 12px 12px 0 0;
   }
 
   .main_products__block--title {
@@ -2317,9 +2345,10 @@ textarea {
     flex: none;
     display: flex;
     flex-direction: column;
+    position: relative;
     align-items: center;
     margin-right: 0;
-    padding: 13px 24px;
+    padding: 24px 13px;
     border: 1px solid #eaecf0;
     border-radius: 12px;
     background: #fff;
@@ -2353,7 +2382,17 @@ textarea {
     font-size: 16px;
     padding-bottom: 0px;
     margin-bottom: 12px;
+    line-height: 175%;
     text-align: center;
+  }
+
+  .card_prod__title span:before {
+    display: none;
+  }
+
+  .card_prod__title span {
+    padding-left: 0;
+    margin-left: 0;
   }
 
   .card_prod__txt {
