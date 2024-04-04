@@ -15,7 +15,10 @@
                 </div>
                 <div class="card_prod__text" v-if="sizes.window >= 1023">Text, text of hash power from mining devices (ASICs) without the need to purchase and install them. You will just pay service fees and receive payouts in BTC to your ECOS account. From mining devices</div>
             </div>
-            <div class="card_prod__txt-info" v-if="sizes.window <= 1023">Product Description</div>
+            <div class="card_prod__mini" v-if="sizes.window <= 1023">
+                <div class="card_prod__txt-info">Product Description</div>
+                <div class="card_prod__txt-content">Text, text. Mining is renting of hash power from mining devices (ASICs) without the need to purchase and install them. You will just pay service fees and receive payouts in BTC to your ECOS account. From mining devices (ASICs) without the need to purchase and install them. You will just pay service fees and receive payouts</div>
+            </div>
             <div class="card_prod__r-side">
                 <div class="card_prod__title" v-if="sizes.window >= 1023">Rent ASIC Order:
                     S19K Pro 115TH<span> Duration: 36 months</span>

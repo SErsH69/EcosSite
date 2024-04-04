@@ -3,6 +3,7 @@ globalFunctions.isWebp();
 
 import Vue from 'vue/dist/vue.js';
 
+import CardProd from '../blocks/modules/card_prod/card_prod.js';
 import MainMore from '../blocks/modules/main_more/main_more.js';
 import Modals from '../blocks/modules/modals/modals.js';
 
@@ -15,6 +16,7 @@ window.app = new Vue({
             mobile: 768,
             window: window.innerWidth
         },
+        cardProd: new CardProd(),
         mainMore: new MainMore(),
         modals: new Modals({
             modalsSelector: "data-modal",
@@ -29,6 +31,7 @@ window.app = new Vue({
     },
     beforeMount() {
         this.isMounted = true;
+        this.cardProd.init();
         this.mainMore.init();
         this.modals.init();
     },
