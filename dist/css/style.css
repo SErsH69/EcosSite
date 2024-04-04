@@ -1566,6 +1566,11 @@ textarea {
   font-weight: 700;
 }
 
+.main_table__mob--txt {
+  text-align: left;
+  padding-right: 10px;
+}
+
 .main_table__scroll {
   overflow: hidden;
 }
