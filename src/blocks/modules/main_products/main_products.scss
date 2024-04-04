@@ -160,7 +160,7 @@
                 margin-bottom: 8px;
                 border: 1px solid #eaecf0;
                 border-radius: 80px;
-                padding: 11px 13px;
+                padding: 10px 13px;
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
@@ -168,6 +168,7 @@
                 font-size: 16px;
                 line-height: 112%;
                 letter-spacing: -0.02em;
+                min-height: 40px;
                 color: #1d2939;
                 @media all and (max-width: 1023px) {
                     padding: 11px 13px;
@@ -187,6 +188,7 @@
                     line-height: 150%;
                     color: #1570ef;
                     padding: 4px 13px;
+                    background: #fff;
                     @media all and (max-width: 1023px) {
                         font-size: 18px;
                     }
